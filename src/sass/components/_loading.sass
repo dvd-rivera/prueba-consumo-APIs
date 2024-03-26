@@ -1,0 +1,40 @@
+.loading-screen
+    width: 100vw
+    height: 100vh
+    position: fixed
+    z-index: 99
+    top: 0
+    left: 0
+    +flex-column
+    background-color: #000e0f
+
+
+    .brand
+        width: 100%
+        max-width: 600px
+
+    .portal
+        width: 100px
+        animation: girar 3s ease-in-out infinite
+
+    h2
+        color: white
+        animation: text 3s linear infinite
+
+@keyframes girar
+    0%
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+
+
+
+@keyframes text
+    0%
+        transform: rotate(0)
+    33%
+        transform: rotate(10deg)
+    66%
+        transform: rotate(-10deg)
+    100%
+        transform: rotate(0deg)

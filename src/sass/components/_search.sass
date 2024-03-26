@@ -1,0 +1,60 @@
+.search-container
+    width: 100%
+    +flex-center
+    margin-top: 20px
+
+    input
+        width: 400px
+        height: 40px
+        border: none
+        border-radius: 12px
+        font-size: 16px
+        padding-left: 12px
+        font-weight: 600
+
+        &:focus
+            outline: none
+            animation: animatedShadow 2s infinite linear
+        &::placeholder
+            color: #999
+            font-weight: 600
+
+    button
+        border: none
+        position: absolute
+        right: 0
+        font-weight: 600
+        height: 40px
+        cursor: pointer
+        border-radius: 12px
+
+        &:hover
+            background-color: #b2e028
+
+
+    .btn-container
+        width: 100%
+        margin-top: 12px
+        +flex-center
+        gap: 12px
+        button
+            position: relative
+            font-size: 12px
+            padding: 0 16px
+            font-weight: 600
+            
+            &:hover
+                background-color: #b2e028
+
+
+@keyframes animatedShadow
+    0%
+        box-shadow: -3px 0 12px #01b5cc
+    25%
+        box-shadow: -3px -3px 12px #01b5cc
+    50%
+        box-shadow: 0 -3px 12px #b2e028
+    75%
+        box-shadow: 3 3px 12px #b2e028
+    100%
+        box-shadow: -3px 0 12px #01b5cc
